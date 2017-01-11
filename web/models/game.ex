@@ -43,6 +43,7 @@ defmodule BattleSnakeServer.Game do
       max_food: game.max_food,
       snakes: [],
       width: game.width,
+      game_id: game.id,
     }
 
     game = put_in game.world, world

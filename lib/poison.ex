@@ -6,6 +6,7 @@ defimpl Poison.Encoder, for: BattleSnake.World do
       :food,
       :turn,
       :snakes,
+      :game_id,
     ]
 
     board = board(world)

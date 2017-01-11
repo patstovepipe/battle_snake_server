@@ -10,6 +10,7 @@ defmodule BattleSnake.World do
     width: pos_integer,
     turn: pos_integer,
     moves: any,
+    game_id: pos_integer,
   }
 
   defstruct [
@@ -20,7 +21,8 @@ defmodule BattleSnake.World do
     height: 0,
     width: 0,
     turn: 0,
-    moves: %{}
+    moves: %{},
+    game_id: 0
   ]
 
   def up,     do: %Point{x: 0,  y: -1}
